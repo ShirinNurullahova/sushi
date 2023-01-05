@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/Image';
 import Link from "next/link";
 import React from "react";
 import Back from "../components/UI/Back";
