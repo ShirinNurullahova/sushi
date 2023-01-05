@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Navigator from "./Navigator";
 import Map from "../../public/map.png";
-import Image from 'next/Image';
+import Image from "next/image"
 
 const GetInTouch = () => {
   return (

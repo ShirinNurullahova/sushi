@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Logo from "../../public/logo2.png";
-import Image from 'next/Image';
+import Image from "next/image"
 
 const Header = ({isAbout}) => {
   console.log(isAbout);

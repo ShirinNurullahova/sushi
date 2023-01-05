@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Navigator from "../components/UI/Navigator";
-import Image from 'next/Image';
+import Image from 'next/image';
 import GetInTouch from "../components/UI/GetInTouch";
 const Menu = () => {
   const [count, setCount] = useState(0);
