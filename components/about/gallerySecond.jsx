@@ -3,7 +3,7 @@ import styles from '../../styles/Gallery.module.scss'
 import sushi1 from '../../public/sushi1.png'
 import sushi2 from '../../public/sushi2.png'
 import Image from "next/image"
-import GalleryThree from './galleryThree'
+import GalleryThree from './GalleryThree'
 
 const GallerySecond = React.forwardRef((props,ref) => {
     return (
