@@ -3,7 +3,7 @@ import styles from '../../styles/Gallery.module.scss'
 import man from '../../public/man.png'
 import man2 from '../../public/man2.png'
 import down from '../../public/down.png'
-import GallerySecond from './GallerySecond'
+import GallerySecond from './GallerySecond.jsx'
 import Image from "next/image"
 
 const Gallery = () => {
