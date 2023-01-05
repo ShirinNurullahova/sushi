@@ -5,6 +5,7 @@ import Footer from '../components/UI/Footer2'
 import Gallery from '../components/about/gallery'
 
 const About = () => {
+  console.log("hello");
   return (
     <>
       <div className={` ${styles.about_page}`}>
