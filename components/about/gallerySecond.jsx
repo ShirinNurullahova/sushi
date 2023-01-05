@@ -30,4 +30,6 @@ const GallerySecond = React.forwardRef((props,ref) => {
     )
 })
 
+GallerySecond.displayName = 'GallerySecond'
+
 export default GallerySecond

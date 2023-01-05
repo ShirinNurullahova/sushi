@@ -119,7 +119,7 @@ const Header2 = ({ data, placeholder }) => {
                 {filteredData.slice(0, 5).map((value, index) => {
                   return (
 
-                    <p className="dataItem" onClick={clearInput} >
+                    <p key={index} className="dataItem" onClick={clearInput} >
                       {value.title}
                     </p>
 
