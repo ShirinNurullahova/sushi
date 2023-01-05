@@ -1,0 +1,44 @@
+[
+    {
+        "id" : 1,
+        "title": "chiken maki roll",
+        "img": "/1.png",
+        "price": 20,
+        "details": "Salmon, crab, avocado, rice"
+    },
+    {
+        "id" : 2,
+        "title": "chiken maki roll",
+        "img": "/2.png",
+        "price": 20,
+        "details": "Salmon, crab, avocado, rice"
+    },
+    {
+        "id" : 3,
+        "title": "chiken maki roll",
+        "img": "/3.png",
+        "price": 20,
+        "details": "Salmon, crab, avocado, rice"
+    },
+    {
+        "id" : 4,
+        "title": "chiken maki roll",
+        "img": "/4.png",
+        "price": 20,
+        "details": "Salmon, crab, avocado, rice"
+    },
+    {
+        "id" : 5,
+        "title": "chiken maki roll",
+        "img": "/5.png",
+        "price": 20,
+        "details": "Salmon, crab, avocado, rice"
+    },
+    {
+        "id" : 6,
+        "title": "chiken maki roll",
+        "img": "/6.png",
+        "price": 20,
+        "details": "Salmon, crab, avocado, rice"
+    }
+]

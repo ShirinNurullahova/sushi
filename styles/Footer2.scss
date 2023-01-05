@@ -1,0 +1,45 @@
+@import "./globals.scss";
+
+.footer2 {
+  background-color: black;
+  //   height: 130px;
+  padding: 38px 9.4%;
+  .footer-content {
+    .branch {
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        transform: rotate(90deg);
+        width: 42px;
+        height: 3px;
+        background-color: #d24a43;
+        left: 95%;
+        border-radius: 5px;
+        bottom: 50%;
+      }
+      &:first-of-type {
+        margin-right: 114px;
+      }
+      h3 {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: right;
+        margin-bottom: 4px;
+        color: #ffffff;
+      }
+      h2 {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: right;
+        color: #ffffff;
+      }
+    }
+  }
+}

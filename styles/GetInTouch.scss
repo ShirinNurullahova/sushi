@@ -1,0 +1,59 @@
+@import "./globals.scss";
+
+.get-in-touch-container {
+  width: 100%;
+  padding-bottom: 119px;
+  .adress-details {
+    h2 {
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: #121212;
+      margin-bottom: 9px;
+    }
+    span {
+      display: block;
+      margin-bottom: 7px;
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15px;
+      text-transform: uppercase;
+
+      /* grey */
+
+      color: #4d4d4d;
+    }
+    a {
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15px;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: #4d4d4d;
+      &:first-of-type {
+        margin-right: 23px;
+      }
+    }
+    .left-panel {
+      margin-right: 28px;
+      .opening {
+        margin-bottom: 30px;
+      }
+      .email {
+        margin-bottom: 30px;
+      }
+    }
+    .right-panel {
+      .adress {
+        margin-bottom: 67px;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@import "./globals.scss";
+
+main {
+  position: relative;
+  background-image: url("../public/background.png");
+  background-size: 100% 100%;
+  // background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  pointer-events: none;
+  ul {
+    padding-top: 28%;
+    width: fit-content;
+    margin-left: auto;
+    align-items: flex-end;
+    li {
+      pointer-events: auto;
+      cursor: pointer;
+      @include fontStyles(Helvetica, 24px, 400, 22px, var(--white));
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      line-height: 28px;
+      transition: all 0.3s ease-in-out;
+      transition-property: color, margin;
+      transition-delay: 100ms;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 3px;
+        transition: all 0.3s ease-in-out;
+        height: 2px;
+        background-color: var(--red);
+        visibility: hidden;
+        opacity: 0;
+      }
+      &:hover {
+        @include fontStyles(Helvetica, 24px, 700, 22px, var(--white));
+        &::after {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      &:hover:not(:last-of-type) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .scroll {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    // height: 25%;
+    min-height: 60px;
+    pointer-events: auto;
+
+    overflow: hidden;
+    z-index: 1;
+    margin: 0;
+    left: 0;
+    padding: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+  .m-scroll {
+    overflow: hidden;
+    height: 100%;
+    white-space: nowrap;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .m-scroll span {
+    // font-family: "light" !important;
+    font-style: normal;
+    @include fontStyles(Helvetica, 24px, 700, 22px, var(--white));
+    text-align: center;
+    display: inline-block;
+    margin-right: 65px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      color: var(--red);
+    }
+    padding: 0;
+  }
+}
+
+.marquee {
+  justify-content: space-between;
+  margin-right: 65px;
+}

@@ -1,0 +1,80 @@
+@import "../styles/globals.scss";
+
+.section-authentication {
+  padding-bottom: 100px;
+  .form-container {
+    padding-top: 50px;
+    padding-left: 16.31%;
+    .navigation {
+      margin-bottom: 37px;
+      ul {
+        li {
+          text-transform: uppercase;
+          @include fontStyles(
+            "Helvetica Neu",
+            14px,
+            700,
+            17px,
+            var(--light-grey)
+          );
+          a {
+            @include fontStyles(
+              "Helvetica Neu",
+              14px,
+              700,
+              17px,
+              var(--light-grey)
+            );
+            text-transform: uppercase;
+          }
+          &.active {
+            color: var(--salmon);
+          }
+          &:not(:first-of-type) {
+            padding-left: 10px;
+          }
+          &:not(:last-of-type) {
+            padding-right: 10px;
+            border-right: 1px solid var(--black);
+          }
+        }
+      }
+    }
+    form {
+      max-width: 770px;
+      width: 100%;
+      display: block;
+      background: #ffffff;
+      /* card */
+      padding: 20px;
+      box-shadow: 0px 2px 4px rgba(187, 187, 187, 0.25);
+      label {
+        @include fontStyles(Helvetica, 14px, 400, 16px, var(--black));
+        text-transform: uppercase;
+        margin-bottom: 18px;
+        input {
+          width: 100%;
+          max-width: 470px;
+          padding: 17px 20px;
+          border: 1px solid rgba(196, 196, 196, 0.7);
+          border-radius: 5px;
+          caret-color: var(--salmon);
+          text-transform: uppercase;
+          color: var(--black);
+          outline: none;
+        }
+      }
+      button {
+        margin-top: calc(50px - 18px);
+        width: 100%;
+        height: 45px;
+        background-color: var(--salmon);
+        @include fontStyles("Helvetica Neue", 16px, 700, 19px, var(--white));
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

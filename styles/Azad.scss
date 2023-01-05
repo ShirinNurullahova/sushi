@@ -1,0 +1,240 @@
+@import "./globals.scss";
+
+.header2 {
+  padding-top: 42px;
+  position: absolute;
+  //  align-items: center;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+  // align-items: center;
+  top: 42px;
+  // &.active-header{
+  //   align-items: flex-start;
+  // }
+  .logo {
+    flex: 1.3;
+ 
+  }
+
+  .nav {
+    flex: 1;
+
+    ul {
+      @include fontStyles(Helvetica, 18px, 400, 22px, var(--white));
+      text-transform: uppercase;
+
+      li {
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          color: var(--red);
+        }
+      }
+    }
+  }
+
+  .search-bar {
+    flex: 1.3 1;
+    max-width: 670px;
+    position: relative;
+    //  .jk{
+    //   border-bottom-right-radius: 0px;
+    //   border-bottom-left-radius: 0px ;
+    //  }
+    //  .srch{
+    //   border-bottom-right-radius: 15px;
+    //   border-bottom-left-radius: 15px;
+    //  }
+    .search-div{
+      &.active-div{
+        border: 3px solid #d24a43;
+    border-radius: 10px;
+    background: white;
+      }
+    }
+    .bottom-div {
+      display: none;
+      .dataItem{
+        padding-left: 30px;
+      }
+      .dataItem:hover{
+          background-color: #C4C4C4; 
+         
+      }
+      &.var {
+        // padding-left: 30px;
+          display: block;
+          background-color: white;
+          max-width: 670px;
+          height: 300px;
+          border: transparent;
+          border-top-color: transparent;
+          border-radius: 15px;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+        p {
+          // padding-top: 30px;
+          font-family: 'Helvetica';
+          margin-top: 30px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 17px;
+          letter-spacing: 0em;
+          // text-align: left;
+  
+        }
+        p:first-child{
+          margin-top: 0;
+        }
+      }
+      &.active-bottom{
+        // padding-left: 30px;
+        display: block;
+        background-color: white;
+        max-width: 670px;
+        height: 300px;
+        border: transparent;
+        border-top-color: transparent;
+        border-radius: 15px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border: 0;
+      }
+    }
+
+   
+
+    label {
+      position: relative;
+    
+      svg {
+        position: absolute;
+        right: 5%;
+        z-index: 999;
+        top: 4px
+      }
+    }
+
+    span {
+      position: absolute;
+      bottom: 100%;
+      left: 30px;
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 4px;
+      color: #ffffff;
+    }
+
+    input {
+      width: 100%;
+      background: #ffffff;
+      border: 3px solid #d24a43;
+      outline: none;
+      border-radius: 150px;
+      height: 54px;
+      padding-left: 30px;
+      &.active-input{
+      border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 0;
+      }
+
+    }
+
+  }
+}
+
+.main-header {
+  &.about-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 999;
+    width: 100%;
+  }
+
+  background-color: black;
+  height: 95px;
+
+  .logo {
+    flex: 1.2;
+    cursor: pointer;
+  }
+
+  .branches {
+    flex: 2;
+  }
+
+  nav {
+    flex: 1.5;
+  }
+
+  .branches {
+    .branch {
+      position: relative;
+
+      &:first-child {
+        margin-right: 114px;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        transform: rotate(90deg);
+        width: 42px;
+        height: 3px;
+        background-color: #d24a43;
+        left: 95%;
+        border-radius: 5px;
+        bottom: 50%;
+      }
+
+      h3 {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: right;
+        color: #ffffff;
+        margin-bottom: 4px;
+      }
+
+      h2 {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: right;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .navigation {
+    ul {
+      li {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: right;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@mixin fontStyles($font-family,
+    $font-size,
+    $font-weight,
+    $line-height,
+    $color) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+
+.about_page {
+    background-image: url('../public/back.png');
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 998;
+
+    .navigation {
+        margin-bottom: 37px;
+        position: absolute;
+        right: 0%;
+        top: 40%;
+        width: fit-content;
+
+        ul {
+            align-items: flex-end;
+
+            li {
+                text-align: right;
+                width: fit-content;
+                pointer-events: auto;
+                cursor: pointer;
+                @include fontStyles(Helvetica, 24px, 400, 22px, var(--white));
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                line-height: 28px;
+                transition: all 0.3s ease-in-out;
+                transition-property: color, margin;
+                transition-delay: 100ms;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    border-radius: 3px;
+                    transition: all 0.3s ease-in-out;
+                    height: 2px;
+                    background-color: var(--red);
+                    visibility: hidden;
+                    opacity: 0;
+                }
+
+                &:hover {
+                    @include fontStyles(Helvetica, 24px, 700, 22px, var(--white));
+
+                    &::after {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+
+                &:hover:not(:last-of-type) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    .chefs{
+        position: absolute;
+        left: -1%;
+        bottom: 80px;
+        h1{
+            @include fontStyles(Helvetica, 100px, 700, 120px, var(--white));
+            text-transform: uppercase;
+        }
+    }
+}

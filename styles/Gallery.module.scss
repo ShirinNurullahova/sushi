@@ -1,0 +1,177 @@
+.gallery_page {
+  position: relative;
+  padding: 5% 333px 5% 235px;
+
+  &_down {
+    position: absolute;
+    top: 10px;
+    right: 140px;
+  }
+
+  &_element {
+    width: 100%;
+    display: flex;
+
+    &_right {
+      width: 472px;
+      margin-left: 30px;
+      margin-top: 15px;
+
+      p {
+        font-family: 'Helvetica';
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+
+      }
+    }
+
+    &_left {
+      align-items: flex-end;
+
+      &_img {
+
+        width: 370px;
+        height: 370px;
+
+      }
+
+      p {
+        font-family: 'HelveticaNeue';
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: #F47F72;
+
+      }
+    }
+  }
+
+  &_bottom {
+    width: 100%;
+    display: flex;
+    margin-top: 150px;
+
+    &_left {
+      width: 472px;
+      margin-right: 150px;
+      margin-top: 15px;
+
+      p {
+        font-family: 'Helvetica';
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+
+      }
+    }
+
+    &_right {
+      align-items: flex-end;
+
+      &_img {
+
+        width: 370px;
+        height: 370px;
+
+      }
+
+      p {
+        font-family: 'HelveticaNeue';
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: #F47F72;
+
+      }
+    }
+  }
+}
+
+.gallerySecond {
+  margin-top: 100px;
+  display: flex;
+  padding: 0 340px 0 135px;
+
+  &_left {
+    display: flex;
+    margin-right: 60px;
+
+    &_p {
+      font-family: 'Helvetica';
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: left;
+      width: 330px;
+      height: 270px;
+      margin-left: 30px;
+    }
+
+    &_img {
+      width: 270px;
+      height: 330px;
+    }
+  }
+
+  &_right {
+    margin-top: -5%;
+  }
+
+  &_bottom {
+    display: flex;
+  }
+}
+
+.galleryThree {
+  position: relative;
+&_div{
+  font-family: 'HelveticaNeue';
+font-size: 120px;
+font-weight: 700;
+line-height: 143px;
+letter-spacing: 0em;
+text-align: right;
+color: #F47F72;
+position: absolute;
+right: 25%;
+top:-17%
+}
+margin-top: 50px;
+margin-bottom: 300px;
+padding-left: 9.4%;
+  &_bottom {
+    display: flex;
+     justify-content: space-around;
+     align-items: flex-end;
+    &_left {
+      width: 270px;
+      height: 270px;
+  
+
+
+    }
+
+    &_right {
+      p {
+        font-family: 'Helvetica';
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        width: 470px;
+        text-align: right;
+         margin-top: 40px;
+      }
+    }
+  }
+}

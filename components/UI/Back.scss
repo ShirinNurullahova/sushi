@@ -1,0 +1,8 @@
+@import "../../styles/globals.scss";
+
+.back-btn {
+  //include fontstyles
+  padding-left: 8.4%;
+  margin-top: 32px;
+  @include fontStyles(Helvetica, 14px, 400, 16px, var(--dark-grey));
+}

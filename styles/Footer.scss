@@ -1,0 +1,45 @@
+.footer {
+  background-color: #000;
+  align-items: flex-end;
+  height: 171px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  .copyright {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    /* grey */
+
+    color: #4d4d4d;
+  }
+  .logo {
+    span {
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 17px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 50px;
+
+      color: #c8c8c8;
+    }
+  }
+  a {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #4d4d4d;
+  }
+}

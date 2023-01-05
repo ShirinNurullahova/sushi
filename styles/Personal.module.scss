@@ -1,0 +1,99 @@
+.personal_info_container {
+  padding-left: 16.31944444%;
+  padding-bottom: 148px;
+  margin-top: -28px;
+  .navigation {
+    margin-bottom: 72px;
+    li {
+      font-family: "HelveticaNeue";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      /* identical to box height */
+
+      /* salmon */
+
+      color: #f47f72;
+    }
+    span {
+      margin: 0 11px;
+      display: inline-block;
+    }
+    a {
+      font-family: "HelveticaNeue";
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+
+      /* light grey */
+
+      color: #838383;
+    }
+  }
+  .info_card {
+    background: #ffffff;
+    max-width: 470px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(187, 187, 187, 0.25);
+    .name_edit {
+      margin-bottom: 18px;
+      h1 {
+        font-family: "HelveticaNeue";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: #121212;
+      }
+      span {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: right;
+        color: #f47f72;
+      }
+    }
+    .info_email {
+      margin-bottom: 13px;
+      h2 {
+        margin-right: 134px;
+      }
+    }
+    .number {
+      h2 {
+        margin-right: 114px;
+      }
+    }
+    .info_email,
+    .number {
+      h2 {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17px;
+        text-transform: uppercase;
+
+        /* dark grey */
+
+        color: #1f1f1f;
+      }
+      h3 {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17px;
+        color: #1f1f1f;
+      }
+    }
+  }
+}

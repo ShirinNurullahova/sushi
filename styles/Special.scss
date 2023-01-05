@@ -1,0 +1,64 @@
+@import "./globals.scss";
+.special-section {
+  padding-top: 90px;
+  .card {
+    //   margin-top: 70px;
+    margin-top: 20px;
+    margin-right: 63px;
+    padding: 0 calc(9.4% + 20px);
+    gap: 0 60px;
+    .card-details {
+      // margin-right: 65px;
+      .title-price {
+        .title {
+          text-transform: uppercase;
+          margin-right: 19px;
+          @include fontStyles(Helvetica, 26px, 700, 36px, var(--black));
+        }
+        .old-price {
+          @include fontStyles(Helvetica, 26px, 400, 34px, var(--light-grey));
+          text-decoration: line-through;
+          margin-right: 7px;
+        }
+        .new-price {
+          @include fontStyles(Helvetica, 26px, 700, 36px, var(--salmon));
+        }
+      }
+      .card-content {
+        max-width: 293px;
+        margin-top: 13px;
+        p {
+          @include fontStyles(Helvetica, 18px, 400, 21px, var(--dark-grey));
+        }
+      }
+      .order-btn {
+        width: 215px;
+        height: 45px;
+        background-color: var(--salmon);
+        border-radius: 4px;
+        margin-top: 55px;
+        @include fontStyles(Helvetica, 16px, 700, 19px, var(--white));
+        border: none;
+      }
+    }
+    .card-image {
+      flex: 1;
+      span {
+        display: block !important;
+      }
+      img {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  }
+}
+
+.swiper-pagination {
+  position: static !important;
+  margin-top: 113px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--salmon) !important;
+}
